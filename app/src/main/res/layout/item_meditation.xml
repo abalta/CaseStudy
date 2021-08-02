@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="item"
+            type="com.interview.casestudy.model.Meditation" />
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="156dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/img_meditation"
+        android:layout_width="match_parent"
+        tools:src="@tools:sample/avatars"
+        android:scaleType="centerCrop"
+        imgUrl="@{item.image.large}"
+        android:layout_height="220dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_meditation_title"
+        android:layout_width="match_parent"
+        tools:text="Sleep Well"
+        android:textColor="@color/white"
+        tools:textColor="@color/text_pig_iron"
+        android:textSize="16sp"
+        android:text="@{item.title}"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_meditation_subtitle"
+        android:layout_width="match_parent"
+        tools:text="A dreamy sleep"
+        android:textColor="@color/white"
+        tools:textColor="@color/text_pig_iron"
+        android:textSize="14sp"
+        android:text="@{item.subtitle}"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</layout>

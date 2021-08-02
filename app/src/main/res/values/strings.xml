@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Meditopia Case Study</string>
+    <string name="title_signup">Sign in to Meditopia</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="text_btn_continue">Continue</string>
+    <string name="title_meditations">Meditations</string>
+    <string name="title_stories">Stories</string>
+    <string name="text_banner">Look. Pretty, isn’t it?\nPerfectly balanced. As all things should be.\n\n%1$s</string>
+    <string name="error_username">Username is longer than two characters</string>
+    <string name="error_password">Password should consist minimum 6 characters with at least 1 uppercase character, 1 number</string>
+    <string name="title_error">Error</string>
+</resources>

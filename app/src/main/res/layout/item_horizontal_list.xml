@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.interview.casestudy.model.HorizontalList" />
+    </data>
+
+    <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        itemDecoration="@{item.itemDecoration}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="24dp"
+        app:adapter="@{item.adapter}"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:recycledViewPool="@{item.pool}"
+        tools:itemCount="5"
+        android:clipToPadding="false"
+        android:layout_marginTop="16dp"
+        tools:listitem="@layout/item_meditation" />
+</layout>
